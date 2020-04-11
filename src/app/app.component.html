@@ -1,0 +1,8 @@
+
+<div *ngFor="let message of messageArray">
+    {{message}}
+</div>
+<div class="sendData">
+<input type="text" [(ngModel)]="message">
+<button (click)="sendMessage()">Send</button>
+</div>
